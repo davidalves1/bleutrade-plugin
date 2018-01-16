@@ -1,0 +1,20 @@
+{
+    "description": "Check Bleutrade market",
+    "manifest_version": 2,
+    "name": "Bleutrade",
+    "version": "1.0",
+    "homepage_url": "https://github.com/davidalves1/bleutrade-firefox",
+    "icons": {
+        "48": "icons/icon-48.jpg"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.bleutrade.com/*"
+            ],
+            "js": [
+                "app.js"
+            ]
+        }
+    ]
+}
