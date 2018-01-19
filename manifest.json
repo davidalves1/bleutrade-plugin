@@ -3,18 +3,19 @@
     "manifest_version": 2,
     "name": "Bleutrade",
     "version": "1.0",
-    "homepage_url": "https://github.com/davidalves1/bleutrade-firefox",
-    "icons": {
-        "48": "icons/icon-48.jpg"
-    },
-    "content_scripts": [
-        {
-            "matches": [
-                "*://*.bleutrade.com/*"
-            ],
-            "js": [
-                "app.js"
-            ]
+    "applications": {
+        "gecko": {
+            "id": "alves.david@outlook.com"
         }
-    ]
+    },
+    "permissions": [
+        "http://*/*",
+        "https://*/*"
+    ],
+    "browser_action": {
+        "default_icon": "icons/icon-48.jpg",
+        "default_title": "Bleutrade Market",
+        "default_popup": "popup/index.html"
+    },
+    "homepage_url": "https://github.com/davidalves1/bleutrade-firefox"
 }
