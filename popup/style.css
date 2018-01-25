@@ -1,0 +1,32 @@
+:root {
+  --success: rgba(34, 139, 34, 0.8);
+  --success-darken: rgba(34, 139, 34, 1);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}   
+
+.container {
+    margin: 5px;
+    width: 200px;
+    height: 170px;
+}
+
+.input-text {
+    width: 185px;
+    height: 25px;
+}
+
+.input-button {
+    background-color: var(--success);
+    border: 1px solid var(--success-darken);
+    color: white;
+    height: 30px;
+    width: 100%;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
