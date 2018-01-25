@@ -16,16 +16,18 @@ send.addEventListener('click', () => {
                 return;
             }
 
-            const { MarketName, PrevDay, Last, Volume } = json.result[0];
+            const { MarketName, PrevDay, Last, Volume, Average } = json.result[0];
 
             const balance = (1 - (PrevDay / Last)) * 100;
 
             response.innerHTML = `
+                <hr>
                 <p>
-                    Pair: ${MarketName}<br>
-                    24h: ${balance.toFixed(2)}%<br>
-                    Last: ${Last}<br>
-                    Volume: ${parseFloat(Volume).toFixed(2)}
+                    <strong>Par:</strong> ${MarketName}<br>
+                    <strong>24h:</strong> ${balance.toFixed(2)}%<br>
+                    <strong>Último:</strong> ${Last}<br>
+                    <strong>Média:</strong> ${Average}<br>
+                    <strong>Volume:</strong> ${parseFloat(Volume).toFixed(2)}
                 </p>
             `;
         })
