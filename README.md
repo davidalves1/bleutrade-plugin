@@ -1,2 +1,1 @@
-# bleutrade-firefox
-Bleutrade ticker to Firefox
+# bleutrade-plugin
